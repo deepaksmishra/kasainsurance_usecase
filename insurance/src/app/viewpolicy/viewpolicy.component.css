@@ -1,0 +1,23 @@
+a{
+    color:black;
+}
+.nav-link.active{
+    background-color: 	#df4759;
+    color: white;
+}
+a:hover{
+    background-color: 	#df4759;
+    color: white;
+}
+
+@media only screen and (max-width: 1314px) {
+    [class="tab-content"] {
+      margin-left: 100px;
+    }
+  }
+
+  @media only screen and (max-width: 1314px) {
+    [class="nav nav-tabs"] {
+      margin-left: 100px;
+    }
+  }
