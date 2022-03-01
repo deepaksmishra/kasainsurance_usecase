@@ -10,6 +10,9 @@ import { RegisterComponent } from './register/register.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NavdashComponent } from './navdash/navdash.component';
+import { ViewpolicyComponent } from './viewpolicy/viewpolicy.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     LoginComponent,
     RegisterComponent,
     FooterComponent,
-    DashboardComponent
+    DashboardComponent,
+    NavdashComponent,
+    ViewpolicyComponent,
+    
   ],
   imports: [
     BrowserModule,
