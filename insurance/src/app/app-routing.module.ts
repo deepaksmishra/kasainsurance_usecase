@@ -7,13 +7,19 @@ import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {NavdashComponent } from './navdash/navdash.component';
 import { ViewpolicyComponent } from './viewpolicy/viewpolicy.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { PaynowComponent } from './paynow/paynow.component';
+import{PgpolicyComponent} from './pgpolicy/pgpolicy.component';
 
 const routes: Routes = [{'path': '', component: HomeComponent},
 {'path': 'header', component: HeaderComponent},
 {'path': 'login', component: LoginComponent},
 {'path': 'register', component: RegisterComponent},
 {'path': 'dashboard', component: DashboardComponent},
-{'path': 'viewpolicy', component: ViewpolicyComponent}]
+{'path': 'viewpolicy', component: ViewpolicyComponent},
+{'path': 'sidebar', component: SidebarComponent},
+{'path': 'paynow', component: PaynowComponent},
+{'path': 'pgpolicy', component: PgpolicyComponent}]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

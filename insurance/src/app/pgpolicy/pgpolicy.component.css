@@ -1,0 +1,5 @@
+
+.panel panel-heading panel-body row>div{
+  column-gap: 10px ;
+  row-gap: 10px ;
+}

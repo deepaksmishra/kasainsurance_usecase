@@ -12,6 +12,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavdashComponent } from './navdash/navdash.component';
 import { ViewpolicyComponent } from './viewpolicy/viewpolicy.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { PaynowComponent } from './paynow/paynow.component';
+import { PgpolicyComponent } from './pgpolicy/pgpolicy.component';
 
 
 @NgModule({
@@ -25,6 +28,9 @@ import { ViewpolicyComponent } from './viewpolicy/viewpolicy.component';
     DashboardComponent,
     NavdashComponent,
     ViewpolicyComponent,
+    SidebarComponent,
+    PaynowComponent,
+    PgpolicyComponent,
     
   ],
   imports: [

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import{ViewpolicyComponent} from '../viewpolicy/viewpolicy.component';
 
 @Component({
   selector: 'app-navdash',

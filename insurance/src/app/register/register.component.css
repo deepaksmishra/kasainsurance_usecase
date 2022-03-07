@@ -1,10 +1,25 @@
 
 
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+
 .container {
     left: 0;
-    right: 250;
+    right: 300px;
     bottom: 0; /* or top: 0, or any needed value */
-    position: fixed;
+    position: absolute;
     z-index: 1000; /* or even higher to prevent guarantee overlapping */
 }
 
@@ -151,7 +166,7 @@
       overflow-y: scroll;
     }*/
     .user-details::-webkit-scrollbar{
-      width: 5px;
+      width: 50px;
     }
     }
     /*@media(max-width: 459px){
