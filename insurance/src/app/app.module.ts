@@ -15,6 +15,17 @@ import { ViewpolicyComponent } from './viewpolicy/viewpolicy.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PaynowComponent } from './paynow/paynow.component';
 import { PgpolicyComponent } from './pgpolicy/pgpolicy.component';
+import { UserRegistrationComponent } from './user-registration/user-registration.component';
+
+
+//HttpClient for API
+import { HttpClientModule } from '@angular/common/http';
+
+
+//import the below modules
+
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -31,12 +42,16 @@ import { PgpolicyComponent } from './pgpolicy/pgpolicy.component';
     SidebarComponent,
     PaynowComponent,
     PgpolicyComponent,
+    UserRegistrationComponent,
+   
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
