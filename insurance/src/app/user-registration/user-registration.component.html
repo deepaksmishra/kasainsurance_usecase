@@ -1,0 +1,120 @@
+<!--ANGULAR CRUD-->
+<!--Creating a user using Web API (Create Operation -> POST)-->
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="title"><span>KASA INSURANCE</span></div>
+            <form action="DashboardComponent" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+
+                <h2 class="text-center">Registration page</h2>
+                <br />
+
+                <div class="row">
+                    <i class="fas fa-user"></i>
+
+                    <input type="text" class="form-control" formControlName="FullName" placeholder="FullName" required>
+                </div>
+                <div class="row">
+                    <i class="fas fa-user"></i>
+
+                    <input type="text" class="form-control" formControlName="Username" placeholder="Username" required>
+                </div>
+                <div class="row">
+                    <i class="fas fa-user"></i>
+
+                    <input type="text" class="form-control" formControlName="Email" placeholder="Email" required>
+                </div>
+                <div class="row">
+                    <i class="fas fa-user"></i>
+
+                    <input type="text" class="form-control" formControlName="PhoneNumber" placeholder="PhoneNumber"
+                        required>
+                </div>
+
+                <div class="row">
+                    <i class="fas fa-user"></i>
+
+                    <input type="text" class="form-control" formControlName="Password" placeholder="Password" required>
+                </div>
+                <div class="row">
+                    <i class="fas fa-user"></i>
+
+                    <input type="text" class="form-control" formControlName="Gender" placeholder="Gender" required>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="pass"><a href="#">Forgot password?</a></div>
+                <div class="row button">
+                    <input type="submit" value="register" id="register" action="/dashboard" method="post">
+                </div>
+                <div class="signin">Already  Member? <a href="/login">Login now</a></div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!--Consuming Web API and displaying in the table (READ OPERATION -> GET)-->
+    <div class="container">
+        <table class="table table-responsive">
+            <thead>
+                <tr>
+                    <th>UserId</th>
+                    <th>FullName</th>
+                    <th>UserName </th>
+                    <th>Email</th>
+                    <th>PhoneNumber</th>
+
+                    <th>Gender</th>
+
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let u of allUsers |async;">
+                    <td> {{u.id}}</td>
+                    <td> {{u.FullName}}</td>
+                    <td> {{u.Username}}</td>
+                    <td> {{u.Email}}</td>
+                    <td> {{u.PhoneNumber}}</td>
+                    <td> {{u.Gender}}</td>
+
+                    <td>
+                        <button type="button" class="btn btn-info" Tooltip="Click Edit Button"
+                            (click)="loadUserToEdit(u.id)">Edit</button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-danger" matTooltip="Click Delete Button"
+                            (click)="deleteUser(u.id)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+        </div>
+
+    </div>
+    <app-footer></app-footer>
