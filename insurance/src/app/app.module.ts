@@ -25,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
 //import the below modules
 
 import { FormsModule } from '@angular/forms';
+import { ApplynewComponent } from './applynew/applynew.component';
 
 
 
@@ -43,6 +44,7 @@ import { FormsModule } from '@angular/forms';
     PaynowComponent,
     PgpolicyComponent,
     UserRegistrationComponent,
+    ApplynewComponent,
    
     
   ],

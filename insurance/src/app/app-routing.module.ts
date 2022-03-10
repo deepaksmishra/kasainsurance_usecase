@@ -10,6 +10,7 @@ import { ViewpolicyComponent } from './viewpolicy/viewpolicy.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PaynowComponent } from './paynow/paynow.component';
 import{PgpolicyComponent} from './pgpolicy/pgpolicy.component';
+import { ApplynewComponent } from './applynew/applynew.component';
 
 const routes: Routes = [{'path': '', component: HomeComponent},
 {'path': 'header', component: HeaderComponent},
@@ -19,7 +20,8 @@ const routes: Routes = [{'path': '', component: HomeComponent},
 {'path': 'viewpolicy', component: ViewpolicyComponent},
 {'path': 'sidebar', component: SidebarComponent},
 {'path': 'paynow', component: PaynowComponent},
-{'path': 'pgpolicy', component: PgpolicyComponent}]
+{'path': 'pgpolicy', component: PgpolicyComponent},
+{'path': 'applynew', component: ApplynewComponent},]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
