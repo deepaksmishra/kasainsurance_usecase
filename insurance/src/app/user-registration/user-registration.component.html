@@ -17,29 +17,46 @@
                     <i class="fas fa-user"></i>
 
                     <input type="text" class="form-control" formControlName="FullName" placeholder="FullName" required>
+                
                 </div>
+                
+                <h5 style="text-align:center">
+                <span style="color: red ; text-align: center; size: 20px;"*ngIf="FullName && FullName.invalid  && FullName.touched">FULLNAME IS REQUIRED HERE</span>
+</h5>
                 <div class="row">
                     <i class="fas fa-user"></i>
 
                     <input type="text" class="form-control" formControlName="UserName" placeholder="UserName" required>
                 </div>
+                <h5 style="text-align:center">
+                    <span style="color: red ; text-align: center; size: 20px;"*ngIf="UserName && UserName.invalid  && UserName.touched">USERNAME IS REQUIRED HERE</span>
+    </h5>
                 <div class="row">
                     <i class="fas fa-user"></i>
 
                     <input type="text" class="form-control" formControlName="Email" placeholder="Email" required>
                 </div>
+                <h5 style="text-align:center">
+                    <span style="color: red ; text-align: center; size: 20px;"*ngIf="Email && Email.invalid  && Email.touched">INVALID FORMAT</span>
+    </h5>
                 <div class="row">
                     <i class="fas fa-user"></i>
 
                     <input type="text" class="form-control" formControlName="PhoneNumber" placeholder="PhoneNumber"
                         required>
                 </div>
+                <h5 style="text-align:center">
+                    <span style="color: red ; text-align: center; size: 20px;"*ngIf="PhoneNumber && PhoneNumber.invalid  && PhoneNumber.touched">AT LEAST 10 DIGIT REQUIRED</span>
+    </h5>
 
                 <div class="row">
                     <i class="fas fa-user"></i>
 
                     <input type="text" class="form-control" formControlName="Password" placeholder="Password" required>
                 </div>
+                <h5 style="text-align:center">
+                    <span style="color: red ; text-align: center; size: 20px;"*ngIf="Password && Password.invalid  && Password.touched">ENTER THE COMBINATION OF 1 LETTER , 1 NUMBER AND SPECIAL CHARACTER</span>
+    </h5>
                 <div class="row">
                     <i class="fas fa-user"></i>
 
@@ -117,4 +134,8 @@
         </div>
 
     </div>
+
+
+
+ 
     <app-footer></app-footer>

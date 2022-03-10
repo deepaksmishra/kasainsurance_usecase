@@ -6,7 +6,10 @@ import { User } from '../user';
 //importuser-service.service.ts
 import { UserServiceService } from '../user-service.service';
 //import for Form designing in Angular
-import { FormGroup,FormControl } from '@angular/forms';
+import { FormGroup,FormControl,Validators, FormBuilder } from '@angular/forms';
+//validation
+
+
 @Component({
   selector: 'app-user-registration',
   templateUrl: './user-registration.component.html',
@@ -14,7 +17,17 @@ import { FormGroup,FormControl } from '@angular/forms';
 })
 export class UserRegistrationComponent implements OnInit 
 {
+  
+  loginform=new FormGroup({
+    FullName:new FormControl('',[Validators.required,Validators.minLength(3)]),
+    UserName:new FormControl('',[Validators.required,Validators.minLength(3)]),
+    Email:new FormControl('',[Validators.pattern('@'),Validators.required,Validators.email]),
+    Password:new FormControl('',[Validators.required,Validators.pattern('^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})')]),
+    PhoneNumber:new FormControl('',[Validators.required,Validators.nullValidator])
+  });
 
+
+  Employeeform:FormGroup | any;
   Gender = ['male', 'female'];
   allUsers :Observable<User[]> | any; 
   userForm :FormGroup | any;
@@ -22,7 +35,8 @@ export class UserRegistrationComponent implements OnInit
   userIdUpdate = null;
   message = null;
   //inheriting UserServiceService from user-service.service.ts
-  constructor(private userservice:UserServiceService)
+ 
+  constructor(private userservice:UserServiceService ,private fb : FormBuilder)
   {
 
   }
@@ -115,4 +129,22 @@ export class UserRegistrationComponent implements OnInit
     this.message = null;
     this.dataSaved = false;
   }
+  get FullName() {
+    return this.userForm.get('FullName');
+     }
+     get Email()
+     { 
+       return this.userForm.get('Email');
+   }
+   get Password(){ 
+     return this.userForm.get('Password');
+   }
+   get UserName()
+   { 
+     return this.userForm.get('UserName');
+   }
+   get PhoneNumber()
+   { 
+     return this.userForm.get('PhoneNumber');
+   }
 }
