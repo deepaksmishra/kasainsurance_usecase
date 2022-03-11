@@ -1,4 +1,4 @@
-# kasainsurance_usecase
+
 # KASA INSURANCE
 ## ANGULAR  WEBSITE PROJECT WITH BASIC CRUD OPERATION
 
@@ -123,28 +123,15 @@ ng serve
 
 GNU
 
-**Free Software, Hell Yeah!**
+**TEAM WORK ALWAYS LEAD TO YOU SUCCESS**
+****
+**TOTAL HOURS SPENT**
+50+ HOURS
+Contribution :
 
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
-   [dill]: <https://github.com/joemccann/dillinger>
-   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
-   [john gruber]: <http://daringfireball.net>
-   [df1]: <http://daringfireball.net/projects/markdown/>
-   [markdown-it]: <https://github.com/markdown-it/markdown-it>
-   [Ace Editor]: <http://ace.ajax.org>
-   [node.js]: <http://nodejs.org>
-   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
-   [jQuery]: <http://jquery.com>
-   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
-   [express]: <http://expressjs.com>
-   [AngularJS]: <http://angularjs.org>
-   [Gulp]: <http://gulpjs.com>
-
-   [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
-   [PlGh]: <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
-   [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
-   [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
-   [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
-   [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
-
+- [Priyanka Rudrawar](https://github.com/priyarudrawar) -   Payment Page Design ,Contact us Page Design , View Policy module ,Apply new policy module
+- [Rajeshwari](https://getbootstrap.com/) - Login module and Register module 
+- [kavya](https://github.com/kavyapd23) - Header , footer ,Policy details module,   About Us page Design 
+- [Madan Kumar](https://github.com/MadhanKumaryk) - Dashboard Design , Validations module , CRUD , Payment Integration
+- [Deepak Mishra](https://github.com/deepaksmishra) - Homepage Modules ,  Validations module , CRUD , Dashboard module , Paymnet Integration
