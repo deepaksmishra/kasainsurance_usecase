@@ -131,7 +131,7 @@ Contribution :
 
 
 - [Priyanka Rudrawar](https://github.com/priyarudrawar) -   Payment Page Design ,Contact us Page Design , View Policy module ,Apply new policy module
-- [Rajeshwari](https://getbootstrap.com/) - Login module and Register module 
+- [Rajeshwari](https://github.com/Rajeswaridevi9) - Login module and Register module 
 - [kavya](https://github.com/kavyapd23) - Header , footer ,Policy details module,   About Us page Design 
 - [Madan Kumar](https://github.com/MadhanKumaryk) - Dashboard Design , Validations module , CRUD , Payment Integration
 - [Deepak Mishra](https://github.com/deepaksmishra) - Homepage Modules ,  Validations module , CRUD , Dashboard module , Paymnet Integration
