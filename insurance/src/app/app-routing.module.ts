@@ -11,6 +11,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { PaynowComponent } from './paynow/paynow.component';
 import{PgpolicyComponent} from './pgpolicy/pgpolicy.component';
 import { ApplynewComponent } from './applynew/applynew.component';
+import{ContactComponent} from './contact/contact.component';
+import{AboutComponent} from './about/about.component';
 
 const routes: Routes = [{'path': '', component: HomeComponent},
 {'path': 'header', component: HeaderComponent},
@@ -21,7 +23,9 @@ const routes: Routes = [{'path': '', component: HomeComponent},
 {'path': 'sidebar', component: SidebarComponent},
 {'path': 'paynow', component: PaynowComponent},
 {'path': 'pgpolicy', component: PgpolicyComponent},
-{'path': 'applynew', component: ApplynewComponent},]
+{'path': 'applynew', component: ApplynewComponent},
+{'path': 'about', component: AboutComponent},
+{'path': 'contact', component: ContactComponent},]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
