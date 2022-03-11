@@ -42,7 +42,7 @@ watch the results in the right.
 
 Kasainsurance uses a number of open source languages , ide and framework to work properly:
 
-- [AngularJS] - Angular JS
+- [AngularJS](https://angularjs.org/) - Angular JS
 - [HTML](https://html.spec.whatwg.org/) - HTML
 - [Bootstrap](https://getbootstrap.com/) - Bootstrap
 - [Javascript](https://www.javascript.com/) - JAVASCRIPT
